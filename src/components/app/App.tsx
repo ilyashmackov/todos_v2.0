@@ -1,10 +1,13 @@
 import React from 'react';
-import TodoList from '../todoList/todoList';
+import TaskAddingForm from '../taskAddingForm/taskAddingForm';
+import ItemList from '../itemList/itemList';
+
 
 const App = () => {
     return (
-        <div>
-            <TodoList/>
+        <div className="component">
+            <TaskAddingForm/>
+            <ItemList  />
         </div>          
     )
 }

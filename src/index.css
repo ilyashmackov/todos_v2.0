@@ -13,13 +13,14 @@
 
   .component {
     width: 350px;
-    height: 250px;
+    height: auto;
     background-color: #fff;
     margin: 50px auto 0 auto;
-    padding: 40px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgba(0,0,0, .2);
   }
+
 
   .todo-list {
     width: 100px;
@@ -34,4 +35,62 @@
     margin-bottom: 20px;
   }
 
-  
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0px;
+    
+  }
+
+  .controls input{
+    height: 30px;
+    padding: 7px 12px;
+    margin-right: 10px;
+  }
+
+  .controls button {
+    height: 30px;
+    padding: 0px 12px;
+    cursor: pointer;
+    background-color: #6B7A8F;
+    color: white;
+    border-radius: 5px;
+    font: 1em "Fira Sans", sans-serif;
+  }
+
+  .form-control {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+
+  .item-list {
+    height: auto;
+    padding-top: 5px;
+    border-radius: 5px;
+  }
+
+
+  .item {
+    height: auto;
+    margin-top: 5px;
+    padding: 10px;
+    border: solid gray;
+    border-width: 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+  }
+
+  .check {
+    zoom: 1;
+  }
+
+  .item button {
+    float:right;
+    border-width: 1px;
+    background-color:#fff;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+  }
