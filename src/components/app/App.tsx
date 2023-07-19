@@ -21,9 +21,10 @@ export default class App extends Component<any, any> {
     super(props);
     this.state = {
       data: [
-        {label: "Ваша первая задача",completed: false,id: uuidv4(),},
-        {label: "Ваша вторая задача",completed: false,id: uuidv4(),},
-        {label: "Ваша третья задача",completed: false,id: uuidv4(),},]
+        { label: "Ваша первая задача", completed: false, id: uuidv4() },
+        { label: "Ваша вторая задача", completed: false, id: uuidv4() },
+        { label: "Ваша третья задача", completed: false, id: uuidv4() },
+      ],
     };
     this.deleteItem = this.deleteItem.bind(this);
     this.addItem = this.addItem.bind(this);
@@ -40,7 +41,7 @@ export default class App extends Component<any, any> {
       },
     ];
     const data = JSON.parse(localStorage.getItem("dataArray") || newArray);
-    if (data.length===0) return {data : newArray};
+    if (data.length === 0) return { data: newArray };
     return {
       data,
     };
